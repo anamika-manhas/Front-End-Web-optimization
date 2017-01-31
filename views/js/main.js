@@ -18,129 +18,7 @@ cameron *at* udacity *dot* com
 
 // As you may have realized, this website randomly generates pizzas.
 // Here are arrays of all possible pizza ingredients.
-var pizzaIngredients = {};
-pizzaIngredients.meats = [
-  "Pepperoni",
-  "Sausage",
-  "Fennel Sausage",
-  "Spicy Sausage",
-  "Chicken",
-  "BBQ Chicken",
-  "Chorizo",
-  "Chicken Andouille",
-  "Salami",
-  "Tofu",
-  "Bacon",
-  "Canadian Bacon",
-  "Proscuitto",
-  "Italian Sausage",
-  "Ground Beef",
-  "Anchovies",
-  "Turkey",
-  "Ham",
-  "Venison",
-  "Lamb",
-  "Duck",
-  "Soylent Green",
-  "Carne Asada",
-  "Soppressata Picante",
-  "Coppa",
-  "Pancetta",
-  "Bresola",
-  "Lox",
-  "Guanciale",
-  "Chili",
-  "Beef Jerky",
-  "Pastrami",
-  "Kielbasa",
-  "Scallops",
-  "Filet Mignon"
-];
-pizzaIngredients.nonMeats = [
-  "White Onions",
-  "Red Onions",
-  "Sauteed Onions",
-  "Green Peppers",
-  "Red Peppers",
-  "Banana Peppers",
-  "Ghost Peppers",
-  "Habanero Peppers",
-  "Jalapeno Peppers",
-  "Stuffed Peppers",
-  "Spinach",
-  "Tomatoes",
-  "Pineapple",
-  "Pear Slices",
-  "Apple Slices",
-  "Mushrooms",
-  "Arugula",
-  "Basil",
-  "Fennel",
-  "Rosemary",
-  "Cilantro",
-  "Avocado",
-  "Guacamole",
-  "Salsa",
-  "Swiss Chard",
-  "Kale",
-  "Sun Dried Tomatoes",
-  "Walnuts",
-  "Artichoke",
-  "Asparagus",
-  "Caramelized Onions",
-  "Mango",
-  "Garlic",
-  "Olives",
-  "Cauliflower",
-  "Polenta",
-  "Fried Egg",
-  "Zucchini",
-  "Hummus"
-];
-pizzaIngredients.cheeses = [
-  "American Cheese",
-  "Swiss Cheese",
-  "Goat Cheese",
-  "Mozzarella Cheese",
-  "Parmesean Cheese",
-  "Velveeta Cheese",
-  "Gouda Cheese",
-  "Muenster Cheese",
-  "Applewood Cheese",
-  "Asiago Cheese",
-  "Bleu Cheese",
-  "Boursin Cheese",
-  "Brie Cheese",
-  "Cheddar Cheese",
-  "Chevre Cheese",
-  "Havarti Cheese",
-  "Jack Cheese",
-  "Pepper Jack Cheese",
-  "Gruyere Cheese",
-  "Limberger Cheese",
-  "Manchego Cheese",
-  "Marscapone Cheese",
-  "Pecorino Cheese",
-  "Provolone Cheese",
-  "Queso Cheese",
-  "Roquefort Cheese",
-  "Romano Cheese",
-  "Ricotta Cheese",
-  "Smoked Gouda"
-];
-pizzaIngredients.sauces = [
-  "Red Sauce",
-  "Marinara",
-  "BBQ Sauce",
-  "No Sauce",
-  "Hot Sauce"
-];
-pizzaIngredients.crusts = [
-  "White Crust",
-  "Whole Wheat Crust",
-  "Flatbread Crust",
-  "Stuffed Crust"
-];
+var pizzaIngredients={};pizzaIngredients.meats=["Pepperoni","Sausage","Fennel Sausage","Spicy Sausage","Chicken","BBQ Chicken","Chorizo","Chicken Andouille","Salami","Tofu","Bacon","Canadian Bacon","Proscuitto","Italian Sausage","Ground Beef","Anchovies","Turkey","Ham","Venison","Lamb","Duck","Soylent Green","Carne Asada","Soppressata Picante","Coppa","Pancetta","Bresola","Lox","Guanciale","Chili","Beef Jerky","Pastrami","Kielbasa","Scallops","Filet Mignon"],pizzaIngredients.nonMeats=["White Onions","Red Onions","Sauteed Onions","Green Peppers","Red Peppers","Banana Peppers","Ghost Peppers","Habanero Peppers","Jalapeno Peppers","Stuffed Peppers","Spinach","Tomatoes","Pineapple","Pear Slices","Apple Slices","Mushrooms","Arugula","Basil","Fennel","Rosemary","Cilantro","Avocado","Guacamole","Salsa","Swiss Chard","Kale","Sun Dried Tomatoes","Walnuts","Artichoke","Asparagus","Caramelized Onions","Mango","Garlic","Olives","Cauliflower","Polenta","Fried Egg","Zucchini","Hummus"],pizzaIngredients.cheeses=["American Cheese","Swiss Cheese","Goat Cheese","Mozzarella Cheese","Parmesean Cheese","Velveeta Cheese","Gouda Cheese","Muenster Cheese","Applewood Cheese","Asiago Cheese","Bleu Cheese","Boursin Cheese","Brie Cheese","Cheddar Cheese","Chevre Cheese","Havarti Cheese","Jack Cheese","Pepper Jack Cheese","Gruyere Cheese","Limberger Cheese","Manchego Cheese","Marscapone Cheese","Pecorino Cheese","Provolone Cheese","Queso Cheese","Roquefort Cheese","Romano Cheese","Ricotta Cheese","Smoked Gouda"],pizzaIngredients.sauces=["Red Sauce","Marinara","BBQ Sauce","No Sauce","Hot Sauce"],pizzaIngredients.crusts=["White Crust","Whole Wheat Crust","Flatbread Crust","Stuffed Crust"];
 
 // Name generator pulled from http://saturdaykid.com/usernames/generator.html
 // Capitalizes first letter of each word
@@ -360,8 +238,8 @@ var makeRandomPizza = function() {
 
 // returns a DOM element for each pizza
 var pizzaElementGenerator = function(i) {
-  var pizzaContainer,             // contains pizza title, image and list of ingredients
-      pizzaImageContainer,        // contains the pizza image
+  var pizzaContainer ,             // contains pizza title, image and list of ingredients
+      pizzaImageContainer ,        // contains the pizza image
       pizzaImage,                 // the pizza image itself
       pizzaDescriptionContainer,  // contains the pizza title and list of ingredients
       pizzaName,                  // the pizza name itself
@@ -419,8 +297,7 @@ var resizePizzas = function(size) {
     }
   }
 
-  changeSliderLabel(size);
-
+  
    // Returns the size difference to change a pizza element from one size to another. Called by changePizzaSlices(size).
   function determineDx (elem, size) {
     var oldWidth = elem.offsetWidth;
@@ -456,10 +333,14 @@ var resizePizzas = function(size) {
     }
   }
 
+ changeSliderLabel(size);
   changePizzaSizes(size);
+   
+ 
+
 
   // User Timing API is awesome
-  window.performance.mark("mark_end_resize");
+ var resizePizzas = function(size){ window.performance.mark("mark_end_resize");
   window.performance.measure("measure_pizza_resize", "mark_start_resize", "mark_end_resize");
   var timeToResize = window.performance.getEntriesByName("measure_pizza_resize");
   console.log("Time to resize pizzas: " + timeToResize[timeToResize.length-1].duration + "ms");
@@ -528,6 +409,7 @@ window.addEventListener('scroll', updatePositions);
 document.addEventListener('DOMContentLoaded', function() {
   var cols = 8;
   var s = 256;
+    
   for (var i = 0; i < 200; i++) {
     var elem = document.createElement('img');
     elem.className = 'mover';
