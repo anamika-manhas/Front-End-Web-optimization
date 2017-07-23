@@ -1,12 +1,12 @@
 ## Website Performance Optimization portfolio project
 
-Project is at: [Website Optimization](https://github.com/anamika-manhas/Front-End-Web-optimization).
+Project is at: [Website Optimization](https://anamika-manhas.github.io/Front-End-Web-optimization/views/pizza.html).
 
 The Goal of this Project was to Optimize a Given Website As Much As Possible for Faster Rendering & to Achieve High Page Speed Score.
 
 #### PageSpeed Insights
-* Desktop 97/100
-* Mobile 95/100
+* Desktop 98/100
+* Mobile 97/100
 
 
 #### Tools used:
