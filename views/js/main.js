@@ -201,15 +201,15 @@ var timeToGenerate = window.performance.getEntriesByName("measure_pizza_generati
 console.log("Time to generate pizzas on load: " + timeToGenerate[0].duration + "ms");
 var frame = 0;
 window.addEventListener("scroll", updatePositions), document.addEventListener("DOMContentLoaded", function() {
-  for (var e, a = 24, r = 256, n = document.getElementById("movingPizzas1"), i = 0; 200 > i; i++){
-    e = document.createElement("img");
-    e.className = "mover";
-    e.src = "images/pizza.png";
-    e.style.height = "100px";
-    e.style.width = "73.333px";
-    e.basicLeft = i % a * r;
-    e.style.top = Math.floor(i / a) * r + "px";
-    n.appendChild(e);
+    for (var e, a = 24, r = 256, n = document.getElementById("movingPizzas1"), i = 0; 100 > i; i++) {
+        e = document.createElement("img");
+        e.className = "mover";
+        e.src = "images/pizza.png";
+        e.style.height = "100px";
+        e.style.width = "73.333px";
+        e.basicLeft = i % a * r;
+        e.style.top = Math.floor(i / a) * r + "px";
+        n.appendChild(e);
     }
-    updatePositions(); 
+    updatePositions();
 });
