@@ -5,8 +5,8 @@ Project is at: [Website Optimization](https://anamika-manhas.github.io/Front-End
 The Goal of this Project was to Optimize a Given Website As Much As Possible for Faster Rendering & to Achieve High Page Speed Score.
 
 #### PageSpeed Insights
-* Desktop 94/100
-* Mobile 96/100
+* Desktop 96/100
+* Mobile 94/100
 
 
 #### Tools used:
